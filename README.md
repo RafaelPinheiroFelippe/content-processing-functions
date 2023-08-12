@@ -11,9 +11,9 @@ This serverless function takes an audio file, slices it using ffmpeg, calls Open
 #### Components
 
 - **Azure Functions**: Serverless compute service that automatically scales.
-- **Azure Blob Storage**: Used for storing and triggering audio files processing.
+- **Azure Blob Storage**: Used for storing and triggering audio file processing.
 - **FFmpeg**: A complete, cross-platform solution to record, convert, and stream audio and video.
-- **Whisper**: OpenAI's automatic speech recognition (ASR) system, used in this function to transcribe the audio content from the sliced audio files.
+- **Whisper**: OpenAI's automatic speech recognition (ASR) system, is used in this function to transcribe the audio content from the sliced audio files.
 
 #### Workflow
 
@@ -38,6 +38,9 @@ Configuration is handled through Azure Key Vault for secrets and `local.settings
 #### Fmpeg
 
 WIP
+
+#### FaunaDB
+
 The index passed into the configuration `FaunaTranscriptionsFileNameIndex` will be created automatically if it doesn't exist.
 
 #### Secrets
